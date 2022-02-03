@@ -1,29 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_print_comb.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/02 18:47:24 by asoler            #+#    #+#             */
-/*   Updated: 2022/02/02 23:29:01 by asoler           ###   ########.fr       */
+/*   Created: 2022/02/03 01:22:55 by asoler            #+#    #+#             */
+/*   Updated: 2022/02/03 03:02:44 by asoler           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_alphabet(void)
+void	ft_print_comb(void)
 {
-	char	letter;
-	int		index;
+	char	first;
+	char	second;
+	char	tirth;
 
-	index = 97;
-	while (index <= 122)
+	first = 48;
+	second = 49;
+	tirth = 50;
+
+	if (first <= 55)
 	{
-		letter = index;
-		write(1, &letter, 1);
-		index++;
+		second++;
+		if (first <= 56)
+		{
+			tirth++;
+			if (tirth <= 57)
+			{
+				write(1, &tirth, 1);
+			}
+		}
+		first++;
 	}
 }
-
-// 97 é a representação decimal do simbolo 'a' na tabela ascii

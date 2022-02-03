@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/02 18:47:24 by asoler            #+#    #+#             */
-/*   Updated: 2022/02/02 23:29:01 by asoler           ###   ########.fr       */
+/*   Created: 2022/02/03 00:10:59 by asoler            #+#    #+#             */
+/*   Updated: 2022/02/03 00:23:54 by asoler           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_alphabet(void)
+void	ft_is_negative(int	n)
 {
-	char	letter;
-	int		index;
+	char	result;
 
-	index = 97;
-	while (index <= 122)
+	if (n >= 0)
 	{
-		letter = index;
-		write(1, &letter, 1);
-		index++;
+		result = 'P';
+		write(1, &result, 1);
+	}
+	else
+	{
+		result = 'N';
+		write(1, &result, 1);
 	}
 }
-
-// 97 é a representação decimal do simbolo 'a' na tabela ascii
