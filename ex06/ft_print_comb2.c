@@ -1,18 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/02 15:46:02 by asoler            #+#    #+#             */
-/*   Updated: 2022/02/03 17:24:43 by asoler           ###   ########.fr       */
+/*   Created: 2022/02/03 14:01:31 by asoler            #+#    #+#             */
+/*   Updated: 2022/02/03 17:08:28 by asoler           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <unistd>
 
-void	ft_putchar(char c)
+void	ft_print_comb2(void)
 {
-	write(1, &c, 1);
+	int first, second;
+
+	
 }
