@@ -6,39 +6,35 @@
 /*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/03 01:22:55 by asoler            #+#    #+#             */
-/*   Updated: 2022/02/03 19:54:08 by asoler           ###   ########.fr       */
+/*   Updated: 2022/02/03 20:03:33 by asoler           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-void	put(char c)
-{
-	write(1, &c, 1)
-}
+// void	put(char c)
+// {
+// 	write(1, &c, 1)
+// }
 
 void	ft_print_comb(void)
 {
-	char	first;
-	char	second;
-	char	tirth;
+	char	digit[3];
 	char	separator[3];
 
-	first = '0';
+	digit[0] = '0';
 	separator[0] = ',';
 	separator[1] = ' ';
 	separator[2] = '\n';
-	while (first <= '7')
+	while (digit[0] <= '7')
 	{
-		second = first + 1;
-		while (second <= '8')
+		digit[1] = digit[0] + 1;
+		while (digit[1] <= '8')
 		{
-			tirth = second + 1;
-			while (tirth <= '9')
+			digit[2] = digit[1] + 1;
+			while (digit[2] <= '9')
 			{
-				write(1, &first, 1);
-				write(1, &second, 1);
-				write(1, &tirth, 1);
-				if (first != '7')
+				write(1, digit, 3);
+				if (digit[0] != '7')
 				{
 					write(1, separator, 2);
 				}
@@ -46,10 +42,10 @@ void	ft_print_comb(void)
 				{
 					write(1, &separator[2], 1);
 				}
-				tirth++;
+				digit[2]++;
 			}
-			second++;
+			digit[1]++;
 		}
-		first++;
+		digit[0]++;
 	}
 }
