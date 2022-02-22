@@ -10,7 +10,11 @@
   <img alt="last commit" src="https://img.shields.io/github/last-commit/angelasoler/C00">
 </p>
 C first challenge.
+
 - Write function.
+
 - Char data type.
+
 - ASSCI table.
+
 - Repetition and conditional structures: while, if, if else.
